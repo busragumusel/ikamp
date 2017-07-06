@@ -1,4 +1,3 @@
-//6th of july
 function Teacher(age, gender, interests, subject, lessons) {
         this.name = [];
         this.gender = gender;
@@ -37,29 +36,30 @@ Teacher.prototype.greetings = function(){
     console.log("Hello. My name is " + getPrefix(this.gender) + this.name[1] + ", and I teach " + this.subject +".");
 };
 
-var lesson = {
-        id: "123",
-        semester: "fall",
-        name: "math"
-},
-
-lesson1 = {
+var lesson = 
+    {
+    id: "123",
+    semester: "fall",
+    name: "math"
+    },
+var lesson1 = 
+    {
     id: "456",
     semester: "fall",
     name: "physic"
-},
+    },
 
-lesson2 = {
+var lesson2 = 
+    {
     id: "789",
     semester: "fall",
     name: "paint"
-};
+    };
 
 Teacher.prototype.getLesson = function () {
     this.lessons.forEach(function (item, index) {
-        item.id;
         console.log(item.id, item.name);
-    })
+    });
 };
 
 var teacher = new Teacher("25","female","js","prototype", [lesson, lesson1, lesson2]);
