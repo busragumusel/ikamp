@@ -1,3 +1,4 @@
+//5th of july
 function Teacher(age, gender, interests, subject, lessons) {
         this.name = [];
         this.gender = gender;
